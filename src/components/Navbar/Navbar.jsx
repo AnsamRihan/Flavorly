@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <header className='sticky top-0 z-50 h-20 bg-bg-primary shadow-md'>
       <div className='container'>
-        <nav className='grid grid-cols-[1fr_10fr_10fr] md:grid-cols-[1fr_3fr_1fr] h-full gap-4'>
+        <nav className='grid grid-cols-[1fr_auto_10fr] md:grid-cols-[1fr_3fr_1fr] h-full gap-4'>
           {/*Logo*/}
           <div className='logo order-2 md:order-1 flex justify-start items-center'>
             <Link to='/' className='font-semibold text-lg xxs:text-xl md:text-2xl text-primary tracking-[-0.6px]
