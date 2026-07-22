@@ -135,7 +135,7 @@ export default function SubscriptionPolicy() {
                 <i class="fa-regular fa-circle-check text-primary pt-0.5"></i>
 
                 <p className='text-sm sm:text-base'>
-                  <span className='text-heading-foreground font-bold'>Automatic Renewal:</span> 
+                  <span className='text-heading-foreground font-bold'>Automatic Renewal:{" "}</span> 
                   All subscriptions renew automatically at the end of each billing period
                   (monthly or annually) unless cancelled.
                 </p>
@@ -145,7 +145,7 @@ export default function SubscriptionPolicy() {
                 <i class="fa-regular fa-circle-check text-primary pt-0.5"></i>
 
                 <p className='text-sm sm:text-base'>
-                  <span className='text-heading-foreground font-bold'>Payment Methods:</span> 
+                  <span className='text-heading-foreground font-bold'>Payment Methods:{" "}</span> 
                   We accept major credit cards, PayPal, and digital wallets. Your payment method will 
                   be charged on the first day of your billing cycle.
                 </p>
@@ -155,7 +155,7 @@ export default function SubscriptionPolicy() {
                 <i class="fa-regular fa-circle-check text-primary pt-0.5"></i>
 
                 <p className='text-sm sm:text-base'>
-                  <span className='text-heading-foreground font-bold'>Price Adjustments:</span> 
+                  <span className='text-heading-foreground font-bold'>Price Adjustments:{" "}</span> 
                   We reserve the right to change our pricing. Any price increases will only
                   apply to the next billing cycle following notification.
                 </p>
@@ -233,6 +233,61 @@ export default function SubscriptionPolicy() {
                 </div>
 
               </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/*Refunds Section */}
+      <section className='pt-6'>
+        <div className="container">
+          <div className='p-6 sm:p-12 bg-white rounded-2xl border border-[#E0C0AF]/30 shadow-[0_8px_24px_0_#2222220A]
+          stack items-start gap-6'>
+            
+            {/*section title */}
+            <div className='w-full flex items-start justify-start gap-2 xxs:gap-6 pb-6 border-b border-[#E0C0AF]/30'>
+              
+              <div className='rounded-lg bg-bg-tertiary p-2 xxs:p-[14.5px] center text-primary text-xs xxs:text-base'>
+                <i className="fa-solid fa-wallet"></i>
+              </div>
+
+              <div className='stack items-start gap-1'>
+                <h2 className='capitalize text-heading-foreground text-xl xxs:text-2xl font-semibold'>
+                  Refunds
+                </h2>
+                <p className='text-sm sm:text-base'>
+                  Our policy on refunds and culinary satisfaction.
+                </p>
+              </div>
+
+            </div>
+
+            {/*section info*/}
+            <div className='w-full stack items-start gap-3'>
+              
+              <p className='text-sm sm:text-base'>
+                Generally, subscription fees are non-refundable. However, we offer a{" "}
+                <span className='text-primary font-bold'>
+                   14-day Satisfaction Guarantee{" "}
+                </span>
+                for first-time annual subscribers.
+              </p>
+
+              <p className='text-sm sm:text-base'>
+                If you are not satisfied with our service within the first 14 days of your initial annual purchase,
+                please contact our support team. Refunds for monthly subscriptions are not typically provided, but
+                exceptions may be made in cases of technical error or duplicate billing.
+              </p>
+
+              <div className='mt-3 w-full p-3 xxs:p-6 rounded-lg bg-[#FFDAD6]/10 border border-[#BA1A1A]/10
+              flex gap-2 text-primary text-sm sm:text-base'>
+                <i class="fa-solid fa-circle-exclamation pt-1"></i>
+                <p>
+                  Partial month refunds are not available for mid-month cancellations.
+                </p>
+              </div>
+
             </div>
 
           </div>
