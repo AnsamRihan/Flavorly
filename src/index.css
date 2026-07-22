@@ -87,7 +87,7 @@
 }
 
 @utility avatar-link{
-    @apply text-primary-foreground! hover:bg-primary! hover:text-on-primary! transition-all duration-50
+    @apply text-primary-foreground! hover:bg-primary! focus:bg-primary! focus:text-on-primary! hover:text-on-primary! transition-all duration-50
     ease-in-out;
 }
 
