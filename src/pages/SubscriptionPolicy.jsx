@@ -103,6 +103,68 @@ export default function SubscriptionPolicy() {
           </div>
         </div>
       </section>
+
+      {/*Billing Cycle Section */}
+      <section className='pt-6'>
+        <div className="container">
+          <div className='p-12 bg-white rounded-2xl border border-[#E0C0AF]/30 shadow-[0_8px_24px_0_#2222220A]
+          stack items-start gap-6'>
+            
+            {/*section title */}
+            <div className='w-full flex items-start justify-start gap-2 xxs:gap-6 pb-6 border-b border-[#E0C0AF]/30'>
+              
+              <div className='rounded-lg bg-bg-tertiary p-2 xxs:p-[14.5px] center text-primary text-xs xxs:text-base'>
+                <i class="fa-regular fa-calendar-days"></i>
+              </div>
+
+              <div className='stack items-start gap-1'>
+                <h2 className='capitalize text-heading-foreground text-xl xxs:text-2xl font-semibold'>
+                  Billing Cycle
+                </h2>
+                <p className='text-sm sm:text-base'>
+                  Clear, predictable billing schedules for your peace of mind.
+                </p>
+              </div>
+
+            </div>
+
+            {/*section info*/}
+            <div className='w-full stack items-start gap-3'>
+
+              <div className='flex gap-3'>
+                <i class="fa-regular fa-circle-check text-primary pt-0.5"></i>
+
+                <p className='text-sm sm:text-base'>
+                  <span className='text-heading-foreground font-bold'>Automatic Renewal:</span> 
+                  All subscriptions renew automatically at the end of each billing period
+                  (monthly or annually) unless cancelled.
+                </p>
+              </div>
+
+              <div className='flex gap-3'>
+                <i class="fa-regular fa-circle-check text-primary pt-0.5"></i>
+
+                <p className='text-sm sm:text-base'>
+                  <span className='text-heading-foreground font-bold'>Payment Methods:</span> 
+                  We accept major credit cards, PayPal, and digital wallets. Your payment method will 
+                  be charged on the first day of your billing cycle.
+                </p>
+              </div>
+
+              <div className='flex gap-3'>
+                <i class="fa-regular fa-circle-check text-primary pt-0.5"></i>
+
+                <p className='text-sm sm:text-base'>
+                  <span className='text-heading-foreground font-bold'>Price Adjustments:</span> 
+                  We reserve the right to change our pricing. Any price increases will only
+                  apply to the next billing cycle following notification.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
     </>
   )
 }
