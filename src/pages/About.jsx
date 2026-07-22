@@ -37,7 +37,7 @@ export default function About() {
               <img src={aboutUsImage} alt="" className='rounded-4xl object-contain max-w-80 hidden sm:block sm:max-w-full'/>
             </div>
 
-            <div className='order-1 sm:order-2 stack gap-12 items-start'>
+            <div className='order-1 sm:order-2 stack gap-12 items-start justify-start lg:justify-center'>
               <div className='stack gap-6 items-start'>
                 <h2 className='text-[32px] font-bold text-heading-foreground tracking-[-0.32px]'>
                   Born from a passion for plate and palate.
@@ -71,6 +71,62 @@ export default function About() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Statistics Section*/}
+      <section className='py-20 bg-bg-secondary'>
+        <div className='container'>
+          <div className='stack gap-20'>
+            <div className='stack'>
+              <h2 className='text-[32px] font-bold text-heading-foreground tracking-[-0.32px]'>
+                Flavorly by the numbers
+              </h2>
+              <p className='max-w-132.25 text-center '>
+                Growing every day, fueled by a global community of food lovers and experimenters.
+              </p>
+            </div>
+
+            <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center'>
+
+              <div className='h-full shadow-[0_8px_24px_0_#2222220A] bg-bg-primary p-12 rounded-4xl stack gap-1 justify-center'>
+                <p className='text-primary font-bold text-5xl tracking-[-0.96px]'>
+                  500+
+                </p>
+                <p className='uppercase text-sm font-semibold tracking-[1.4px]'>
+                  HANDCRAFTED RECIPES
+                </p>
+              </div>
+
+              <div className='h-full shadow-[0_8px_24px_0_#2222220A] bg-bg-primary p-12 rounded-4xl stack gap-1 justify-center'>
+                <p className='text-primary font-bold text-5xl tracking-[-0.96px]'>
+                  1M+
+                </p>
+                <p className='uppercase text-sm font-semibold tracking-[1.4px]'>
+                  ACTIVE USERS
+                </p>
+              </div>
+
+              <div className='h-full shadow-[0_8px_24px_0_#2222220A] bg-bg-primary p-12 rounded-4xl stack gap-1 justify-center'>
+                <p className='text-primary font-bold text-5xl tracking-[-0.96px]'>
+                  4.9
+                </p>
+                <p className='uppercase text-sm font-semibold tracking-[1.4px]'>
+                  APP STORE RATING
+                </p>
+              </div>
+
+              <div className='h-full shadow-[0_8px_24px_0_#2222220A] bg-bg-primary p-12 rounded-4xl stack gap-1 justify-center'>
+                <p className='text-primary font-bold text-5xl tracking-[-0.96px]'>
+                  150K
+                </p>
+                <p className='uppercase text-sm font-semibold tracking-[1.4px]'>
+                  PHOTOS SHARED
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
