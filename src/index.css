@@ -111,7 +111,7 @@
 
 @utility btn-transparent{
     @apply px-12 py-4.5 text-[14px] font-semibold bg-transparent text-center rounded-xl border border-primary
-    capitalize w-fit hover:bg-primary/10 transition-colors ease-in-out duration-300;
+    capitalize w-fit text-on-primary hover:bg-primary/10 transition-colors ease-in-out duration-300;
 }
 
 @utility loader {

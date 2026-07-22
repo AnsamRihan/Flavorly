@@ -1,6 +1,7 @@
 import React from 'react'
-import heroImage from "../assets/images/aboutUs/hero.svg";
-import aboutUsImage from "../assets/images/aboutUs/aboutUs.svg";
+import heroImage from "./../assets/images/aboutUs/hero.svg";
+import aboutUsImage from "./../assets/images/aboutUs/aboutUs.svg";
+import registerSectionBg from "./../assets/images/aboutUs/registerSectionBackground.png";
 
 export default function About() {
   return (
@@ -80,11 +81,11 @@ export default function About() {
       <section className='py-20 bg-bg-secondary'>
         <div className='container'>
           <div className='stack gap-20'>
-            <div className='stack'>
+            <div className='stack text-center'>
               <h2 className='text-[32px] font-bold text-heading-foreground tracking-[-0.32px]'>
                 Flavorly by the numbers
               </h2>
-              <p className='max-w-132.25 text-center '>
+              <p className='max-w-132.25'>
                 Growing every day, fueled by a global community of food lovers and experimenters.
               </p>
             </div>
@@ -127,6 +128,32 @@ export default function About() {
                 </p>
               </div>
 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Register Section*/}
+      <section className='py-20'>
+        <div className="container">
+          <div className='rounded-[48px] overflow-hidden bg-[#3B2D26] p-10 xs:p-13 sm:p-20 w-full h-full bg-no-repeat bg-cover bg-center
+            center' style={{ backgroundImage: `url(${registerSectionBg})`}}>
+            <div className='stack text-center justify-center gap-6 max-w-158'>
+              <h2 className='text-4xl sm:text-5xl text-on-primary font-bold tracking-[-0.96px]'>
+                Ready to start cooking?
+              </h2>
+              <p className='text-[#E0C0AF] text-sm xs:text-base'>
+                Join over a million food enthusiasts and elevate your kitchen skills today. Your next favorite meal is just a click away.
+              </p>
+
+              <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-6 pt-10'>
+                <button className='btn-primary w-full'>
+                  Create Free Account
+                </button>
+                <button className='btn-transparent w-full'>
+                  Browse Recipes
+                </button>
+              </div>
             </div>
           </div>
         </div>
