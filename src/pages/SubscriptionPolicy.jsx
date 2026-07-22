@@ -293,6 +293,30 @@ export default function SubscriptionPolicy() {
           </div>
         </div>
       </section>
+
+      {/*Clarity section */}
+      <section className='py-20'>
+        <div className="container">
+          <div className='w-full rounded-2xl bg-primary p-6 sm:p-12 stack justify-center gap-3'>
+            <h2 className='text-on-primary text-[32px] font-bold tracking-[-0.32px]'>
+              Need more clarity?
+            </h2>
+            <p className='text-on-primary text-sm sm:text-base text-center'>
+              Our culinary support team is here to help with any subscription questions.
+            </p>
+
+            <div className='pt-3 grid grid-cols-1 sm:grid-cols-2 w-full gap-6'>
+              <button className='btn-bg-primary w-full'>
+                Contact Support
+              </button>
+
+              <button className='btn-transparent w-full border-bg-primary hover:bg-[#c29166]/30'>
+                View FAQ
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
