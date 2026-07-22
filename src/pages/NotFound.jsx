@@ -1,5 +1,5 @@
 import React from 'react'
-import notFoundImage from './../assets/notFoundImage.png'
+import notFoundImage from './../assets/images/404/notFoundImage.png'
 import { Link } from 'react-router-dom'
 
 export default function NotFound() {
