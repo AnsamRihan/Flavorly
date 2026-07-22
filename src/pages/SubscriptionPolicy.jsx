@@ -42,14 +42,14 @@ export default function SubscriptionPolicy() {
       {/*Subscription Plans Section */}
       <section className='pt-6'>
         <div className="container">
-          <div className='p-12 bg-white rounded-2xl border border-[#E0C0AF]/30 shadow-[0_8px_24px_0_#2222220A]
+          <div className='p-6 sm:p-12 bg-white rounded-2xl border border-[#E0C0AF]/30 shadow-[0_8px_24px_0_#2222220A]
           stack items-start gap-6'>
             
             {/*section title */}
             <div className='w-full flex items-start justify-start gap-2 xxs:gap-6 pb-6 border-b border-[#E0C0AF]/30'>
               
               <div className='rounded-lg bg-bg-tertiary p-2 xxs:p-[14.5px] center text-primary text-xs xxs:text-base'>
-                <i class="fa-regular fa-star"></i>
+                <i className="fa-regular fa-star"></i>
               </div>
 
               <div className='stack items-start gap-1'>
@@ -72,7 +72,7 @@ export default function SubscriptionPolicy() {
                   <h3 className='uppercase text-primary font-semibold text-sm tracking-[0.7px]'>
                     BASIC TASTE
                   </h3>
-                  <p className='text-sm sm:text-base'>
+                  <p className='text-sm sm:text-base text-heading-foreground'>
                     Access to 5,000+ curated recipes, basic
                     meal planning tools, and community
                     forums.
@@ -83,7 +83,7 @@ export default function SubscriptionPolicy() {
                   <h3 className='uppercase text-primary font-semibold text-sm tracking-[0.7px]'>
                     MASTER CHEF
                   </h3>
-                  <p className='text-sm sm:text-base'>
+                  <p className='text-sm sm:text-base text-heading-foreground'>
                     Unlimited recipe access, professional
                     video masterclasses, personalized AI
                     meal plans, and offline mode.
@@ -107,14 +107,14 @@ export default function SubscriptionPolicy() {
       {/*Billing Cycle Section */}
       <section className='pt-6'>
         <div className="container">
-          <div className='p-12 bg-white rounded-2xl border border-[#E0C0AF]/30 shadow-[0_8px_24px_0_#2222220A]
+          <div className='p-6 sm:p-12 bg-white rounded-2xl border border-[#E0C0AF]/30 shadow-[0_8px_24px_0_#2222220A]
           stack items-start gap-6'>
             
             {/*section title */}
             <div className='w-full flex items-start justify-start gap-2 xxs:gap-6 pb-6 border-b border-[#E0C0AF]/30'>
               
               <div className='rounded-lg bg-bg-tertiary p-2 xxs:p-[14.5px] center text-primary text-xs xxs:text-base'>
-                <i class="fa-regular fa-calendar-days"></i>
+                <i className="fa-regular fa-calendar-days"></i>
               </div>
 
               <div className='stack items-start gap-1'>
@@ -159,6 +159,79 @@ export default function SubscriptionPolicy() {
                   We reserve the right to change our pricing. Any price increases will only
                   apply to the next billing cycle following notification.
                 </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/*Cancellation Policy Section */}
+      <section className='pt-6'>
+        <div className="container">
+          <div className='p-6 sm:p-12 bg-white rounded-2xl border border-[#E0C0AF]/30 shadow-[0_8px_24px_0_#2222220A]
+          stack items-start gap-6'>
+            
+            {/*section title */}
+            <div className='w-full flex items-start justify-start gap-2 xxs:gap-6 pb-6 border-b border-[#E0C0AF]/30'>
+              
+              <div className='rounded-lg bg-bg-tertiary p-2 xxs:p-[14.5px] center text-primary text-xs xxs:text-base'>
+                <i className="fa-regular fa-circle-xmark"></i>
+              </div>
+
+              <div className='stack items-start gap-1'>
+                <h2 className='capitalize text-heading-foreground text-xl xxs:text-2xl font-semibold'>
+                  Cancellation Policy
+                </h2>
+                <p className='text-sm sm:text-base'>
+                  We believe in a no-pressure experience. Cancel anytime without hidden fees.
+                </p>
+              </div>
+
+            </div>
+
+            {/*section info*/}
+            <div className='w-full stack items-start gap-6'>
+
+              <div className='w-full bg-bg-secondary rounded-lg p-6 text-center'>
+                <p className='text-sm sm:text-base text-heading-foreground italic'>
+                  "You can cancel your Flavorly subscription at any time through your Account Settings. Your
+                  access to premium features will continue until the end of your current paid billing period."
+                </p>
+              </div>
+
+              <div className='w-full flex justify-around gap-12 flex-wrap text-center'>
+
+                <div className='stack justify-center gap-1.5 '>
+                  <i className="fa-solid fa-gear text-primary-foreground"></i>
+                  <h3 className='capitalize font-semibold text-sm text-heading-foreground tracking-[0.7px]'>
+                    Step 1
+                  </h3>
+                  <p className='text-xs capitalize'>
+                    Go to Profile Settings
+                  </p>
+                </div>
+
+                <div className='stack justify-center gap-1.5 '>
+                  <i className="fa-solid fa-money-bills text-primary-foreground"></i>
+                  <h3 className='capitalize font-semibold text-sm text-heading-foreground tracking-[0.7px]'>
+                    Step 2
+                  </h3>
+                  <p className='text-xs capitalize'>
+                    Select 'Subscription'
+                  </p>
+                </div>
+
+                <div className='stack justify-center gap-1.5 '>
+                  <i className="fa-solid fa-circle-minus text-primary-foreground"></i>
+                  <h3 className='capitalize font-semibold text-sm text-heading-foreground tracking-[0.7px]'>
+                    Step 3
+                  </h3>
+                  <p className='text-xs capitalize'>
+                    Click 'Cancel Membership'
+                  </p>
+                </div>
+
               </div>
             </div>
 
