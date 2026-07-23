@@ -62,13 +62,16 @@ export default function About() {
                 </div>
                 
                 <div className='h-full rounded-xl bg-bg-tertiary border border-bg-tertiary/30 p-6 stack items-start gap-1'>
-                  <i className="fa-regular fa-eye text-lg lg:text-2xl text-primary"></i>
+                  <i className="fa-solid fa-utensils text-lg lg:text-2xl text-primary"></i>
                   <h3 className='text-lg lg:text-2xl font-semibold text-primary capitalize'>
-                    Our Vision
+                    Our Mission
                   </h3>
                   <p className='text-sm md:text-base text-primary-foreground'>
-                    To become the world's most trusted companion for culinary
-                    exploration and shared home dining experiences.
+                    To empower home cooks with
+                    precise, beautiful, and
+                    accessible recipes that turn
+                    everyday meals into
+                    extraordinary memories.
                   </p>
                 </div>
               </div>

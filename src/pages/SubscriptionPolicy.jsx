@@ -297,7 +297,7 @@ export default function SubscriptionPolicy() {
       {/*Clarity section */}
       <section className='py-20'>
         <div className="container">
-          <div className='w-full rounded-2xl bg-primary p-6 sm:p-12 stack justify-center gap-3'>
+          <div className='w-full rounded-2xl bg-primary p-6 sm:p-12 stack justify-center gap-3 text-center'>
             <h2 className='text-on-primary text-[32px] font-bold tracking-[-0.32px]'>
               Need more clarity?
             </h2>
