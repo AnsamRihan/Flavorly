@@ -10,8 +10,18 @@ import pieImage from './../assets/images/homePage/pie.jpg'
 import cakeImage from './../assets/images/homePage/cake.webp'
 
 import CategoryCard from '../components/CategoryCard/CategoryCard';
+import RecipeCard from '../components/RecipeCard/RecipeCard';
+import { getRecipes } from '../services/RecipeApi';
+import { useQuery } from '@tanstack/react-query';
 
 export default function Home() {
+
+  const {data, isError, isLoading, error} = useQuery({
+    queryKey:['recipes', 'Pizza'],
+    queryFn: () => getRecipes('pizza'),
+    staleTime:1000 * 60 * 5,
+  });
+
   return (
     <>
       {/*Hero Section*/}
@@ -64,6 +74,51 @@ export default function Home() {
               <CategoryCard image={pieImage} title={'pie'} />
               <CategoryCard image={cakeImage} title={'cake'} />
               
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Trending Recipes Section */}
+      <section className='py-20 bg-bg-secondary'>
+        <div className='container'>
+          <div className='w-full stack gap-12'>
+            {/*Section title */}
+            <div className='w-full center justify-start gap-3'>
+              <i className="fa-solid fa-arrow-trend-up text-primary"></i>
+              <h2 className='text-heading-foreground text-[32px] font-bold tracking-[-0.32px]'>
+                Trending Recipes
+              </h2>
+            </div>
+
+            {/*Recipes */}
+            <div className='w-full grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+              {isLoading && (
+                <div className="col-span-full center">
+                  <span className="loader"></span>
+                </div>
+              )}
+
+              {isError && (
+                <p className="text-red-500 text-base">
+                  Error getting data!
+                </p>
+              )}
+
+              {data?.data.recipes.length === 0 && (
+                <p className="text-red-500 text-base">
+                  Error getting data!
+                </p>
+              )}
+
+              {data?.data.recipes.length > 0 && (
+                data.data.recipes.slice(0, 4).map((recipe) => (
+                  <RecipeCard
+                    key={recipe.id}
+                    recipe={recipe}
+                  />
+                ))
+              )}
             </div>
           </div>
         </div>
