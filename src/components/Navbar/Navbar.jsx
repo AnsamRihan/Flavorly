@@ -58,12 +58,12 @@ export default function Navbar() {
           <div className="row justify-end gap-4 lg:gap-6 order-3 h-full">
             {/*Moon Button */}
             <button className='h-full center'>
-              <i class="fa-regular fa-moon navbar-icon"></i>
+              <i className="fa-regular fa-moon navbar-icon"></i>
             </button>
 
             {/*Bell Button */}
             <button className='h-full center'>
-              <i class="fa-regular fa-bell navbar-icon"></i>
+              <i className="fa-regular fa-bell navbar-icon"></i>
             </button>
 
             {/* Avatar dropdown */}

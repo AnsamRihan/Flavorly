@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 import SubscriptionPolicy from './pages/SubscriptionPolicy'
+import Recipes from './pages/Recipes'
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path:'subscriptionPolicy',
                 element:<SubscriptionPolicy />
+            },
+            {
+                path:'recipes',
+                element:<Recipes />
             }
         ]
     }
