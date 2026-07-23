@@ -1,6 +1,7 @@
 import React from 'react'
 import { useQuery } from '@tanstack/react-query';
 import { getRecipes } from '../services/RecipeApi';
+import RecipeCard from '../components/RecipeCard/RecipeCard';
 
 import heroImage from './../assets/images/recipes/hero.svg'
 
@@ -47,6 +48,22 @@ export default function Recipes() {
                 {data.results+" "}Recipes
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Recipes Section */}
+      <section className='py-20'>
+        <div className="container">
+          <div className='w-full grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+            {data?.data.recipes.length > 0 && (
+              data.data.recipes.map((recipe) => (
+                <RecipeCard
+                  key={recipe.id}
+                  recipe={recipe}
+                />
+              ))
+            )}
           </div>
         </div>
       </section>
